@@ -1,0 +1,74 @@
+body {
+  background-color: #DAFDBA;
+}
+
+/* Reset some default styles */
+* {
+  margin: 1;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the song list */
+.song-list-container {
+  max-width: 600px; /* Set the maximum width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Style for the song list */
+.song-list {
+  list-style-type: circle;
+  padding: 0;
+}
+
+.song-list li div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.song-name {
+  flex-grow: 1;
+  margin-right: 10px; /* Add some space between song name and time */
+  color: #012030;
+}
+
+.song-time {
+  text-align: right;
+  color: #012030;
+}
+
+/* Style for the image */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image */
+  border-radius: 15%;
+}
+
+a:hover {
+  color:#45C4B0 !important;  
+}
+
+.nav-link {
+  text-align: center;
+  margin: 10px;
+  position: relative;
+  top: -30px;
+  
+  
+}
+.nav-link a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #012030;
+}
+
+li {
+  font-family: monospace;
+}
+
+ul
