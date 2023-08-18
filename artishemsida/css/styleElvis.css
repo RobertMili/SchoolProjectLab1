@@ -1,5 +1,5 @@
 body {
-  background-color: #DAFDBA;
+  background-color: #f1f3ef;
 }
 
 .content-container {
@@ -36,6 +36,7 @@ body {
   align-items: center;
   padding: 10px 0;
   border-bottom: 1px solid;
+  font-weight: bold;
 
 }
 
@@ -93,4 +94,58 @@ ul {
   border-radius: 15%;
 }
 
+.order-record-container {
+  background-color: #fff;
+  border: solid 1px #ccc;
+  padding: 20px 10px;
+  border-radius: 5%;
+}
 
+.order-record-container h2 {
+  text-align: center;
+}
+
+.float-label-field {
+  border: none;
+  outline: none;
+  position: relative;
+  margin: 0 0 20px 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.float-label-field input,
+.float-label-field textarea {
+  border: none;
+  outline: none;
+  padding: 5px 5px 8px 0px;
+  width: 100%;
+  font-size: 18px;
+  border-bottom: solid 1px #efefef;
+}
+
+.float-label-field label {
+  opacity: 0.5;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  transition: all 0.2s ease;
+  font-size: 18px;
+  pointer-events: none;
+  font-weight: bold;
+}
+
+.float-label-field:focus-within label,
+.float-label-field input:valid + label,
+.float-label-field textarea:valid + label {
+  top: -8px;
+  font-size: 60%;
+  opacity: 1;
+  color: orange;
+  font-weight: bold;
+}
+
+.float-label-field:focus-within input,
+.float-label-field:focus-within textarea {
+  border-bottom: solid 1px orange;
+}
