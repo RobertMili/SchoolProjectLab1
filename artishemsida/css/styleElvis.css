@@ -149,3 +149,35 @@ ul {
 .float-label-field:focus-within textarea {
   border-bottom: solid 1px orange;
 }
+
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.social-media a {
+  margin: 0 10px;
+}
+
+.social-media a .link-icon::before {
+  font-size: 40px; /* Adjust the size as needed */
+}
+
+.link {
+  color: #3498db; 
+  text-decoration: none; 
+}
+
+.link-icon {
+  font-size: 24px; 
+}
+
+/* Tooltip styles */
+.hint--bounce:before,
+.hint--bounce:after {
+  background-color: #3498db;
+  color: white;
+}
