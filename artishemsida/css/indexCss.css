@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
 .color-text {
 
     color: black;
@@ -21,16 +24,16 @@ a {
 
 
 body {
-  margin: 0;
-  overflow: hidden;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(-45deg, #FF6B6B, #cad2d8, #dad5df, #FFD700);
-  background-size: 400% 400%;
-  animation: gradientAnimation 15s ease infinite;
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #FF6B6B, #cad2d8, #dad5df, #FFD700);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
 }
 @keyframes gradientAnimation {
   0% {
@@ -55,7 +58,7 @@ body {
   font-size: 1.2rem;
 }
 
-.header{
+.container{
     padding: 20px;
     text-align: center;
     position: absolute;
@@ -65,8 +68,9 @@ body {
     font-family: 'Tangerine', cursive;
 }
 
-.header h1 {
+.container h1 {
   font-size: 100px;
+  margin-top: 40%;
 }
 
 .animated-text {
@@ -93,5 +97,68 @@ body {
   color: blue;
   text-decoration: none;
   transition: color 0.3s;
+}
+
+
+* {
+  box-sizing:  border-box;
+  margin: 0;
+  padding: 0;
+}
+li, a, button {
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+
+}
+#elvisLogo {
+  max-width: 70px;
+}
+
+
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+.nav_links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav_links li {
+  margin: 0 15px; 
+}
+
+.nav_links li a {
+  text-decoration: none;
+  color: blue;
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: aqua;
+}
+button {
+  padding: 9px 25px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition:  all 0.3 ease 0s;
+}
+button:hover {
+  background-color:  rgba(0,136,169,0.8);
 }
 
