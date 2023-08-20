@@ -1,39 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 
-.color-text {
-
-    color: black;
-    font-size: 24px;
-    transition: color 0.3s;
-    font-weight: bolder;
-    
-    
-}
-
-a {
-  color: blue;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-*:hover {
-  color: blue;
-
-}
-
 
 body {
+
+    height: 100vh;
     margin: 0;
     overflow: hidden;
     font-family: Arial, sans-serif;
-    display: flex;
+
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(-45deg, #FF6B6B, #cad2d8, #dad5df, #FFD700);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
+    overflow-y: scroll;
 }
 @keyframes gradientAnimation {
   0% {
@@ -58,107 +40,193 @@ body {
   font-size: 1.2rem;
 }
 
-.container{
-    padding: 20px;
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 5;
-    width: 50;
+*{
+    box-sizing:  border-box;
+    margin: 0;
+    padding: 0;
+  }
+.header li, .header a, .header button {
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    
+  }
+  
+  
+  .header {
+    display: flex;
+    justify-content: flex-end ;
+    align-items: center;
+    padding: 30px 10%;
+  
+  }
+  #elvisLogo {
+    max-width: 70px;
+  }
+  
+  .logo {
+    cursor: pointer;
+    margin-right: auto;
+    margin-right: a;
+  }
+  .nav_links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav_links li {
+    margin: 0 15px; 
+  }
+  
+  .nav_links li a {
+    text-decoration: none;
+    color: rgb(8, 8, 11);
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav_links li a:hover {
+    color: aqua;
+  }
+
+  button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:  all 0.3 ease 0s;
+  }
+  button:hover {
+    background-color:  #e74c3c;
+  }
+
+ 
+  .animated-text {
+    animation: colorChange 5s infinite alternate;
+    font-size: 200px;
+    margin-top: 10%;
     font-family: 'Tangerine', cursive;
-}
-
-.container h1 {
-  font-size: 100px;
-  margin-top: 40%;
-}
-
-.animated-text {
-  animation: colorChange 5s infinite alternate;
-}
-
-@keyframes colorChange {
-  0% {
-    color:black;
+    margin-left: 300px;
   }
-  50% {
-    color: blue;
+  
+  @keyframes colorChange {
+    0% {
+      color:black;
+    }
+    50% {
+      color: blue;
+    }
+    100% {
+      color: black;
+    }
   }
-  100% {
-    color: black;
+
+  .social-media {
+    
+     position:fixed;
+     bottom: 0;
+     left: 40%;
+     border-radius: 0;
+     width: 100%;
+     z-index: 1;
+   }
+   
+   .social-media a {
+     margin: 0 10px;
+   }
+   
+   .social-media a .link-icon::before {
+     font-size: 40px; /* Adjust the size as needed */
+   }
+   
+   .link {
+     color: #3498db; 
+     text-decoration: none; 
+   }
+   
+   .link-icon {
+     font-size: 24px; 
+   }
+   
+   /* Tooltip styles */
+   .hint--bounce:before,
+   .hint--bounce:after {
+     background-color: #3498db;
+     color: white;
+   }
+   .social-media a .link-icon::before {
+    font-size: 40px; 
+    color: #3498db;
+    transition: transform 0.3s ease, color 0.3s ease; /* Add transition for smooth animation */
   }
-}
-
-.nav-link {
-  text-align: center;
-  margin-top: 20px;
-}
-.nav-link a {
-  color: blue;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+  
+  .social-media a:hover .link-icon::before {
+    transform: scale(1.2); 
+    color: #e74c3c; 
+  }
 
 
-* {
-  box-sizing:  border-box;
-  margin: 0;
-  padding: 0;
-}
-li, a, button {
-  font-family: "Montserrat",sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  text-decoration: none;
-}
+  .elvis-albums {
+    margin-top: 500px;
+    height: 90vh; /* Adjust the height as needed */
+  }
+  
+  .elvis-albums-content {
+    max-height: 10%;
+  }
+  
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Create flexible columns */
+    justify-content: space-evenly;
+    align-content: end;
+    height: 500px;
+  
+  }
+
+  .grid-container img {
+    border-radius: 50%;
+  
+  }
+
+  .grid-item p {
+    margin-left: 220px;
+    font-family: 'Times New Roman', Times, serif, cursive !important;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    transition: color 3s;
+  }
 
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
+  .grid-item:hover img {
+    transform: scale(1.1); /* Scale the image on hover */
+  }
+  
+  /* Position the pop-up content */
+  .grid-item .popup-content {
+    position: absolute;
+    top: 50%; /* Position it vertically at the middle */
+    left: 50%; /* Position it horizontally at the middle */
+    transform: translate(-50%, -50%); /* Center the content */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 10s ease; /* Apply transition for opacity change */
+  }
+  
+  .grid-item:hover .popup-content {
+    opacity: 1; /* Show the content on hover */
+  }
+  
 
-}
-#elvisLogo {
-  max-width: 70px;
-}
-
-
-
-.logo {
-  cursor: pointer;
-  margin-right: auto;
-}
-.nav_links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.nav_links li {
-  margin: 0 15px; 
-}
-
-.nav_links li a {
-  text-decoration: none;
-  color: blue;
-  transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover {
-  color: aqua;
-}
-button {
-  padding: 9px 25px;
-  background-color: rgba(0,136,169,1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition:  all 0.3 ease 0s;
-}
-button:hover {
-  background-color:  rgba(0,136,169,0.8);
-}
-
+  *:hover{
+    color: #eef0f3;
+  }
+  
