@@ -27,7 +27,7 @@
 
     <label>Confirm Password</label>
     <input type="password" placeholder="" />
-    <input type="button" value="Submit" />
+    <input type="submit" value="Submit" />
     
     
     <p>
@@ -55,14 +55,19 @@
             <h1>Login</h1>
             <form id="registration-form" action="#" method="post">
 
-            <label for="email">Email</label>
-            <input type="email" placeholder="" id="email"/>
+            <label for="login">Login in</label>
+            <input type="text" placeholder="" id="login" onblur="checkUserName(5)">
+            <div id="feedback"></div>
             
             <label for="password">Password</label>
             <input type="password" placeholder="" id="password"/>
-            <input type="button" value="Submit" />
+
+            
+            <input type="submit" value="Submit" />
             
         </div>
+
+        <script src="/artishemsida/js/registering.js"></script>
        
     </body>
 </html>

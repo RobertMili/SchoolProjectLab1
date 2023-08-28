@@ -110,7 +110,7 @@ ul {
   border: none;
   outline: none;
   position: relative;
-  margin: 0 0 20px 0;
+  margin: 0 0 18px 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -149,6 +149,12 @@ ul {
 .float-label-field:focus-within input,
 .float-label-field:focus-within textarea {
   border-bottom: solid 1px orange;
+}
+
+.order-record-container input[type="submit"][value="submit"] {
+  width: 200px;
+  border-radius: 15px;
+  margin-left: 30%;
 }
 
 
