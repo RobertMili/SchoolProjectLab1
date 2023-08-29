@@ -1,232 +1,240 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-
-
-body {
-
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
-    font-family: Arial, sans-serif;
-
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(-45deg, #FF6B6B, #cad2d8, #dad5df, #FFD700);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
-    overflow-y: scroll;
+ body {
+     height: 100vh;
+     margin: 0;
+     overflow: hidden;
+     font-family: Arial, sans-serif;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: linear-gradient(-45deg, #FF6B6B, #cad2d8, #dad5df, #FFD700);
+     background-size: 400% 400%;
+     animation: gradientAnimation 15s ease infinite;
+     overflow-y: scroll;
 }
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-.content {
-  text-align: center;
-  color: #ffffff;
-}
-.content h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-.content p {
-  font-size: 1.2rem;
-}
-
-*{
-    box-sizing:  border-box;
-    margin: 0;
-    padding: 0;
-  }
-.header li, .header a, .header button {
-    font-family: "Montserrat",sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    text-decoration: none;
-    
-  }
-  
-  
-  .header {
-    display: flex;
-    justify-content: flex-end ;
-    align-items: center;
-    padding: 30px 10%;
-  
-  }
-  #elvisLogo {
-    max-width: 70px;
-  }
-  
-  .logo {
-    cursor: pointer;
-    margin-right: auto;
-    margin-right: a;
-  }
-  .nav_links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .nav_links li {
-    margin: 0 15px; 
-  }
-  
-  .nav_links li a {
-    text-decoration: none;
-    color: rgb(8, 8, 11);
-    transition: all 0.3s ease 0s;
-  }
-  
-  .nav_links li a:hover {
-    color: aqua;
-  }
-
-  button {
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: #3498db;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition:  all 0.3 ease 0s;
-  }
-  button:hover {
-    background-color:  #e74c3c;
-  }
-
- 
-  .animated-text {
-    animation: colorChange 5s infinite alternate;
-    font-size: 200px;
-    margin-top: 10%;
-    font-family: 'Tangerine', cursive;
-    margin-left: 300px;
-  }
-  
-  @keyframes colorChange {
-    0% {
-      color:black;
+ @keyframes gradientAnimation {
+     0% {
+         background-position: 0% 50%;
     }
-    50% {
-      color: blue;
+     50% {
+         background-position: 100% 50%;
     }
-    100% {
-      color: black;
+     100% {
+         background-position: 0% 50%;
     }
-  }
-
-  .social-media {
-    
+}
+ .content {
+     text-align: center;
+     color: #ffffff;
+}
+ .content h1 {
+     font-size: 4rem;
+     margin-bottom: 1rem;
+}
+ .content p {
+     font-size: 1.2rem;
+}
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+ .header li, .header a, .header button {
+     font-family: "Montserrat",sans-serif;
+     font-weight: 500;
+     font-size: 16px;
+     text-decoration: none;
+}
+ .header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 30px 10%;
+}
+ #elvisLogo {
+     max-width: 70px;
+}
+ .logo {
+     cursor: pointer;
+     margin-right: auto;
+     margin-right: a;
+}
+ .nav_links {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+}
+ .nav_links li {
+     margin: 0 15px;
+}
+ .nav_links li a {
+     text-decoration: none;
+     color: rgb(8, 8, 11);
+     transition: all 0.3s ease 0s;
+}
+ .nav_links li a:hover {
+     color: aqua;
+}
+ button {
+     margin-left: 20px;
+     padding: 9px 25px;
+     background-color: #3498db;
+     border: none;
+     border-radius: 50px;
+     cursor: pointer;
+     transition: all 0.3 ease 0s;
+}
+ button:hover {
+     background-color: #e74c3c;
+}
+@media (max-width: 768px) {
+  
+}
+ @media (max-width: 500px) {
+     .logo {
+         margin-left: 10px;
+    }
+}
+ .animated-text {
+     animation: colorChange 5s infinite alternate;
+     font-size: 200px;
+     margin-top: 10%;
+     font-family: 'Tangerine', cursive;
+     margin-left: 300px;
+}
+ @media(max-width: 768px) {
+     .animated-text {
+         animation: colorChange 5s infinite alternate;
+         font-size: 100px;
+         margin-top: 18%;
+         margin-right: 130px;
+         font-family: 'Tangerine', cursive;
+         margin-left: 130px;
+    }
+}
+ @media(max-width: 500px) {
+     .animated-text {
+         animation: colorChange 5s infinite alternate;
+         font-size: 100px;
+         margin-top: 50%;
+         font-family: 'Tangerine', cursive;
+         margin-left: 130px;
+    }
+}
+ @keyframes colorChange {
+     0% {
+         color:black;
+    }
+     50% {
+         color: blue;
+    }
+     100% {
+         color: black;
+    }
+}
+ .social-media {
      position:fixed;
      bottom: 0;
      left: 40%;
      border-radius: 0;
      width: 100%;
      z-index: 1;
-   }
-   
-   .social-media a {
+}
+ .social-media a {
      margin: 0 10px;
-   }
-   
-   .social-media a .link-icon::before {
-     font-size: 40px; /* Adjust the size as needed */
-   }
-   
-   .link {
-     color: #3498db; 
-     text-decoration: none; 
-   }
-   
-   .link-icon {
-     font-size: 24px; 
-   }
-   
-   /* Tooltip styles */
-   .hint--bounce:before,
-   .hint--bounce:after {
+}
+ .social-media a .link-icon::before {
+     font-size: 40px;
+    /* Adjust the size as needed */
+}
+ .link {
+     color: #3498db;
+     text-decoration: none;
+}
+ .link-icon {
+     font-size: 24px;
+}
+/* Tooltip styles */
+ .hint--bounce:before, .hint--bounce:after {
      background-color: #3498db;
      color: white;
-   }
-   .social-media a .link-icon::before {
-    font-size: 40px; 
-    color: #3498db;
-    transition: transform 0.3s ease, color 0.3s ease; /* Add transition for smooth animation */
-  }
-  
-  .social-media a:hover .link-icon::before {
-    transform: scale(1.2); 
-    color: #e74c3c; 
-  }
-
-
-  .elvis-albums {
-    margin-top: 500px;
-    height: 90vh; /* Adjust the height as needed */
-  }
-  
-  .elvis-albums-content {
-    max-height: 10%;
-  }
-  
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Create flexible columns */
-    justify-content: space-evenly;
-    align-content: end;
-    height: 500px;
-  
-  }
-
-  .grid-container img {
-    border-radius: 50%;
-
-  }
-
-  .grid-item p {
-    margin-left: 220px;
-    font-family: 'Times New Roman', Times, serif, cursive !important;
-    padding: 20px;
-    font-size: 18px;
-    font-weight: bolder;
-    transition: color 3s;
-  }
-
-
-  .grid-item:hover img {
-    transform: scale(1.1); /* Scale the image on hover */
-  }
-  
-  /* Position the pop-up content */
-  .grid-item .popup-content {
-    position: absolute;
-    top: 50%; /* Position it vertically at the middle */
-    left: 50%; /* Position it horizontally at the middle */
-    transform: translate(-50%, -50%); /* Center the content */
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 10px;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 10s ease; /* Apply transition for opacity change */
-  }
-  
-  .grid-item:hover .popup-content {
-    opacity: 1; /* Show the content on hover */
-  }
-  
-
-  *:hover{
-    color: #eef0f3;
-  }
-  
+}
+ .social-media a .link-icon::before {
+     font-size: 40px;
+     color: #3498db;
+     transition: transform 0.3s ease, color 0.3s ease;
+    /* Add transition for smooth animation */
+}
+ .social-media a:hover .link-icon::before {
+     transform: scale(1.2);
+     color: #e74c3c;
+}
+ .elvis-albums {
+     margin-top: 500px;
+     height: 90vh;
+    /* Adjust the height as needed */
+}
+ .elvis-albums-content {
+     max-height: 10%;
+}
+ @media(max-width: 768px) {
+     .elvis-albums {
+         margin-top: 700px;
+         height: 90vh;
+        /* Adjust the height as needed */
+    }
+     .elvis-albums-content {
+         max-height: 10%;
+    }
+}
+ .grid-container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* Create flexible columns */
+     justify-content: space-evenly;
+     align-content: end;
+     height: 500px;
+}
+ .grid-container img {
+     border-radius: 50%;
+}
+ .grid-item p {
+     margin-left: 220px;
+     font-family: 'Times New Roman', Times, serif, cursive !important;
+     padding: 20px;
+     font-size: 18px;
+     font-weight: bolder;
+     transition: color 3s;
+}
+ .grid-item:hover img {
+     transform: scale(1.1);
+    /* Scale the image on hover */
+}
+/* Position the pop-up content */
+ .grid-item .popup-content {
+     position: absolute;
+     top: 50%;
+    /* Position it vertically at the middle */
+     left: 50%;
+    /* Position it horizontally at the middle */
+     transform: translate(-50%, -50%);
+    /* Center the content */
+     background-color: rgba(0, 0, 0, 0.8);
+     color: white;
+     padding: 10px;
+     opacity: 0;
+    /* Initially hidden */
+     transition: opacity 10s ease;
+    /* Apply transition for opacity change */
+}
+ .grid-item:hover .popup-content {
+     opacity: 1;
+    /* Show the content on hover */
+}
+ *:hover{
+     color: #eef0f3;
+}
+/*Mobile view */
+/* Adjust other styles as needed for better mobile display */
+ 
