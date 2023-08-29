@@ -88,13 +88,13 @@
  button:hover {
      background-color: #e74c3c;
 }
-@media (max-width: 768px) {
-  
-}
+
  @media (max-width: 500px) {
+
      .logo {
          margin-left: 10px;
     }
+    
 }
  .animated-text {
      animation: colorChange 5s infinite alternate;
@@ -107,10 +107,10 @@
      .animated-text {
          animation: colorChange 5s infinite alternate;
          font-size: 100px;
-         margin-top: 18%;
+         margin-top: 30%;
          margin-right: 130px;
          font-family: 'Tangerine', cursive;
-         margin-left: 130px;
+         margin-left: 200px;
     }
 }
  @media(max-width: 500px) {
@@ -119,7 +119,7 @@
          font-size: 100px;
          margin-top: 50%;
          font-family: 'Tangerine', cursive;
-         margin-left: 130px;
+         margin-left: 200px;
     }
 }
  @keyframes colorChange {
@@ -141,6 +141,18 @@
      width: 100%;
      z-index: 1;
 }
+
+@media(max-width: 768px) {
+  .social-media {
+    left: 28%;
+  }
+}
+@media(max-width: 500px) {
+  .social-media {
+    left: 20%;
+  }
+}
+
  .social-media a {
      margin: 0 10px;
 }
@@ -170,6 +182,8 @@
      transform: scale(1.2);
      color: #e74c3c;
 }
+
+
  .elvis-albums {
      margin-top: 500px;
      height: 90vh;
@@ -187,6 +201,7 @@
      .elvis-albums-content {
          max-height: 10%;
     }
+    
 }
  .grid-container {
      display: grid;
@@ -235,6 +250,16 @@
  *:hover{
      color: #eef0f3;
 }
-/*Mobile view */
-/* Adjust other styles as needed for better mobile display */
+
+@media(max-width: 768px) {
+ .grid-container img {
+      border-radius: 50%;
+      width: 120%; /* Set the desired width */
+      height: 100%; /* Set the desired height */
+}
+ .grid-item p {
+     margin-left: 20px;
+
+}
  
+}
