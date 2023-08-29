@@ -1,84 +1,136 @@
 body {
-    background-color: #344c73;
-    font-family: "Roboto", sans-serif;
-  
-   
+     background-color: #344c73;
+     font-family: "Roboto", sans-serif;
 }
-
-.registering-container {
-    display: flex;
-    justify-content: flex-start;
+ .registering-container {
+     display: flex;
+     justify-content: flex-start;
 }
-
-
-.become-member {
-    width: 360px;
-    height: 620px;
-    margin: auto;
-    background-color: white;
-    border-radius: 10px;
+ .become-member {
+     width: 360px;
+     height: 620px;
+     margin: auto;
+     background-color: white;
+     border-radius: 10px;
 }
-
-.login-box {
-    width: 360px;
-    height: 280px;
-    margin: auto;
-    border-radius: 3px;
-    background-color: white;
-    padding: 30px;
-    margin-top: 20px;
-    margin-left: 20px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    
+ .login-box {
+     width: 360px;
+     height: 300px;
+     margin: auto;
+     border-radius: 3px;
+     background-color: white;
+     padding: 30px;
+     margin-top: 20px;
+     margin-left: 20px;
+     border-radius: 10px;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
 }
-
-h1 {
-    text-align: center;
-    padding-top: 15px;
+ h1 {
+     text-align: center;
+     padding-top: 15px;
 }
-.login-box form,form {
-    width: 300px;
-    margin-left: 20px;
+ .login-box form,form {
+     width: 300px;
+     margin-left: 20px;
 }
-.login-box label, form label {
-    display: flex;
-    margin-top: 20px;
-    font-size: 18px;
-    
+ .login-box label, form label {
+     display: flex;
+     margin-top: 20px;
+     font-size: 18px;
 }
-
-.login-box input, form input {
-    width: 100%;
-    padding: 7px;
-    border: none;
-    border: 1px solid gray;
-    border-radius: 6px;
-    outline: none;
-    
+ .login-box input, form input {
+     width: 100%;
+     padding: 7px;
+     border: none;
+     border: 1px solid gray;
+     border-radius: 6px;
+     outline: none;
 }
  input[type="submit"] {
-    width: 320px;
-    height: 35px;
-    margin-top: 20px;
-    border: none;
-    background-color: #49c1a2;;
-    color: white;
-    font-size: 18px;
+     width: 320px;
+     height: 35px;
+     margin-top: 20px;
+     border: none;
+     background-color: #49c1a2;
+    ;
+     color: white;
+     font-size: 18px;
 }
-.login-box input[type="button"] {
-    width: 374px;
+ .login-box input[type="button"] {
+     width: 374px;
 }
+ p {
+     text-align: center;
+     padding-top: 20px;
+     font-size: 15px;
+}
+ .error {
+     color: red;
+}
+ 
 
-p {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 15px;
-}
+@media(max-width: 768px){
+    .registering-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+       
+    }
+    .login-box {
+            margin-left: 22%;
+            width: 360px;
+            height: 300px;
+            margin: auto;
+            border-radius: 3px;
+            background-color: white;
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+    }
+    
 
-.error {
-    color: red;
-  }
-  
+    .become-member {
+        margin-top: 50px;
+        /* margin-left: 25%; */
+    }
+}
+@media(max-width: 500px){
+    .registering-container {
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+       
+    }
+    .login-box {
+        margin-left: 8%;
+        margin-right: 8%;
+        width: 360px;
+        height: 300px;
+        margin: auto;
+        border-radius: 3px;
+        background-color: white;
+        padding: 30px;
+        margin-top: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .become-member {
+        margin-left: 8%;
+        margin-right: 8%;
+        width: 360px;
+        height: 620px;
+        margin: auto;
+        border-radius: 3px; 
+        margin-top: 50px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
