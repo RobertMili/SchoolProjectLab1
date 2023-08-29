@@ -1,35 +1,31 @@
 body {
   background-color: #f1f3ef;
 }
-
 .content-container {
   display: flex;
   justify-content: center;
   flex-direction: row;
   margin-right: 100px;
-  
 }
-
 /* Reset some default styles */
 * {
   margin: 1;
   padding: 0;
   box-sizing: border-box;
 }
-
 /* Container for the song list */
 .song-list-container {
   flex-grow: 10;
-  max-width: 600px; /* Set the maximum width for the container */
-  margin: 0 left; /* Center the container */
+  max-width: 600px;
+ /* Set the maximum width for the container */
+  margin: 0 left;
+ /* Center the container */
 }
-
 /* Style for the song list */
 .song-list {
   list-style-type: circle;
   padding: 0;
 }
-
 .song-list li div {
   display: flex;
   justify-content: space-between;
@@ -37,50 +33,38 @@ body {
   padding: 10px 0;
   border-bottom: 1px solid;
   font-weight: bold;
-
 }
-
 .song-name {
   flex-grow: 1;
-  margin-right: 10px; /* Add some space between song name and time */
+  margin-right: 10px;
+ /* Add some space between song name and time */
   color: #012030;
 }
-
 .song-time {
   text-align: right;
   color: #012030;
 }
-
-
-
 a:hover {
-  color:#45C4B0 !important;  
+  color:#45C4B0 !important;
 }
-
 .nav-link {
   text-align: center;
   margin: 10px;
   position: relative;
- 
-  
-  
 }
 .nav-link a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bolder;
   color: #012030;
 }
-
 li {
   font-family: monospace;
 }
-
 ul {
   list-style-type: disc;
   margin-left: 20px;
 }
-
 .image-container {
   text-align: center;
   padding: 20px;
@@ -99,13 +83,10 @@ ul {
   border: solid 1px #ccc;
   padding: 50px 10px;
   border-radius: 5%;
- 
 }
-
 .order-record-container h2 {
   text-align: center;
 }
-
 .float-label-field {
   border: none;
   outline: none;
@@ -114,9 +95,7 @@ ul {
   padding: 0;
   box-sizing: border-box;
 }
-
-.float-label-field input,
-.float-label-field textarea {
+.float-label-field input, .float-label-field textarea {
   border: none;
   outline: none;
   padding: 5px 5px 8px 0px;
@@ -124,7 +103,6 @@ ul {
   font-size: 18px;
   border-bottom: solid 1px #efefef;
 }
-
 .float-label-field label {
   opacity: 0.5;
   position: absolute;
@@ -135,29 +113,21 @@ ul {
   pointer-events: none;
   font-weight: bold;
 }
-
-.float-label-field:focus-within label,
-.float-label-field input:valid + label,
-.float-label-field textarea:valid + label {
+.float-label-field:focus-within label, .float-label-field input:valid + label, .float-label-field textarea:valid + label {
   top: -8px;
   font-size: 60%;
   opacity: 1;
   color: orange;
   font-weight: bold;
 }
-
-.float-label-field:focus-within input,
-.float-label-field:focus-within textarea {
+.float-label-field:focus-within input, .float-label-field:focus-within textarea {
   border-bottom: solid 1px orange;
 }
-
 .order-record-container input[type="submit"][value="submit"] {
   width: 200px;
   border-radius: 15px;
   margin-left: 30%;
 }
-
-
 .social-media {
   position:fixed;
   bottom: 0;
@@ -166,27 +136,63 @@ ul {
   width: 100%;
   z-index: 1;
 }
-
 .social-media a {
   margin: 0 10px;
 }
-
 .social-media a .link-icon::before {
-  font-size: 40px; /* Adjust the size as needed */
+  font-size: 40px;
+ /* Adjust the size as needed */
 }
-
 .link {
-  color: #3498db; 
-  text-decoration: none; 
+  color: #3498db;
+  text-decoration: none;
 }
-
 .link-icon {
-  font-size: 24px; 
+  font-size: 24px;
 }
-
 /* Tooltip styles */
-.hint--bounce:before,
-.hint--bounce:after {
+.hint--bounce:before, .hint--bounce:after {
   background-color: #3498db;
   color: white;
+}
+
+@media(max-width: 768px) {
+
+  .content-container {
+    flex-direction: column; 
+    display: flex;
+    justify-content: center;
+    margin-left: 80px;
+    margin-top: 90px;
+  }
+  .song-list-container {
+    margin-top: 50px;
+  }
+  .social-media {
+    left: 28%;
+ 
+  }
+
+}
+
+@media(max-width: 500px) {
+  .content-container {
+    flex-direction: column; 
+    display: flex;
+    justify-content: center;
+    margin-left: 80px;
+    margin-top: 90px;
+  }
+
+  .order-record-container {
+    margin-top: 180px;
+  }
+  .order-record-container input[type="submit"][value="submit"] {
+    width: 100px;
+   
+  }
+
+  .social-media {
+    left: 18%;
+  }
 }
