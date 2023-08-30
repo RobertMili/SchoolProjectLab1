@@ -10,6 +10,11 @@ fetch("data/elvisSong.json")
     console.log(songList);
     console.log(songListContainer);
 
+
+    //Sort:
+    songList.sort((a, b) => a.songName.localeCompare(b.songName));
+   
+
     songList.forEach((song) => {
       const li = document.createElement("li");
       const div = document.createElement("div");
