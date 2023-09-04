@@ -187,13 +187,17 @@
 }
  @media(max-width: 768px) {
      .elvis-albums {
-         margin-top: 700px;
+         margin-top: 900px;
          height: 90vh;
         /* Adjust the height as needed */
     }
      .elvis-albums-content {
          max-height: 10%;
     }
+    .shopping-container{
+        flex-direction: row-reverse;
+    }
+    
 }
  .grid-container {
      display: grid;
@@ -243,12 +247,13 @@
  *:hover{
      color: #eef0f3;
 }
+
  @media(max-width: 768px) {
     .grid-container {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-      
+        flex-wrap: nowrap;
     }
 
      .grid-container img {
@@ -259,6 +264,14 @@
      .grid-item p {
          margin-left: 20px;
     }
+
+
+    .grid-item {
+        width: 325px;
+        height: 438px;
+
+    }
+    
 }
  .shopping-container{
      display: flex;
@@ -291,8 +304,13 @@
  .shopping-container button#add-animation1 {
      margin-left: 100px;
 }
- .shopping-container button#add-animation2 {
+
+
+@media(max-width: 768px) {
   
+    .shopping-container button#add-animation1 {
+        margin-left: 20px;
+    }
 }
  .counter-container {
      border-radius: .1rem;
@@ -360,7 +378,8 @@
 
 
 @media (max-width: 768px) {
-
+  
+  
     
 }
  .cta-button {
@@ -375,3 +394,7 @@
      background-color: #e74c3c;
 }
  
+
+@media(max-width: 768px) {
+    
+}
