@@ -88,13 +88,10 @@
  button:hover {
      background-color: #e74c3c;
 }
-
  @media (max-width: 500px) {
-
      .logo {
          margin-left: 10px;
     }
-    
 }
  .animated-text {
      animation: colorChange 5s infinite alternate;
@@ -141,18 +138,16 @@
      width: 100%;
      z-index: 1;
 }
-
-@media(max-width: 768px) {
-  .social-media {
-    left: 28%;
-  }
+ @media(max-width: 768px) {
+     .social-media {
+         left: 28%;
+    }
 }
-@media(max-width: 500px) {
-  .social-media {
-    left: 20%;
-  }
+ @media(max-width: 500px) {
+     .social-media {
+         left: 20%;
+    }
 }
-
  .social-media a {
      margin: 0 10px;
 }
@@ -182,8 +177,6 @@
      transform: scale(1.2);
      color: #e74c3c;
 }
-
-
  .elvis-albums {
      margin-top: 500px;
      height: 90vh;
@@ -201,7 +194,6 @@
      .elvis-albums-content {
          max-height: 10%;
     }
-    
 }
  .grid-container {
      display: grid;
@@ -250,136 +242,134 @@
  *:hover{
      color: #eef0f3;
 }
+ @media(max-width: 768px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+      
+    }
 
-@media(max-width: 768px) {
- .grid-container img {
-      border-radius: 50%;
-      width: 120%; /* Set the desired width */
-      height: 100%; /* Set the desired height */
+     .grid-container img {
+        border-radius: 50%;
+        height: 280px;
+        
+    }
+     .grid-item p {
+         margin-left: 20px;
+    }
 }
- .grid-item p {
-     margin-left: 20px;
-
+ .shopping-container{
+     display: flex;
+     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+     justify-content: space-between;
+     align-content: center;
 }
- 
+ .shopping-container button {
+     width: 200px;
+     border-radius: .1rem;
+     background-color: #FF6B6B;
+     padding: 0 3rem;
+     transition: .2s opacity;
+     border-radius: 10px;
+}
+ .shopping-container button:hover{
+     opacity: .9;
+     cursor: pointer;
+}
+ .shopping-container button:active{
+     transform: scale(1.3);
+}
+ .shopping-container button#add-animation {
+     margin-left: 50px;
+     
+}
+ .shopping-container button#add-animation1 {
+     margin-left: 100px;
+}
+ .shopping-container button#add-animation2 {
+     margin-left: 130px;
+     margin-right: 50px;
+}
+ .counter-container {
+     border: 1px solid #18040420;
+     border-radius: .1rem;
+     width: 3.3rem;
+     height: 3.3rem;
+     margin-right: 1rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+}
+ .counter-container svg {
+     width: 3rem;
+     height: 50px;
+     color: rgb(198, 59, 63);
+}
+ .counter-container span {
+     user-select: none;
+     position: absolute;
+     background: #3498db;
+     width: 1.3rem;
+     height: 1.3rem;
+     font-size: .8rem;
+     border-radius: 50%;
+     font-weight: bold;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     top: -.2rem;
+     right: .20rem;
+}
+ .counter-container span:not(.animated-counter) {
+     display: none;
+}
+ .counter-container span.animated-counter {
+     animation: count .4s ease-in-out;
+}
+ @keyframes count{
+     from{
+         top: .2rem;
+         right: -1.8rem;
+         transform: rotate(120deg) 
+    }
+     25%{
+         top: -.2rem;
+         right: -1.2rem;
+         transform: rotate(80deg) 
+    }
+     50%{
+         top: -.4rem;
+         right: -.6rem;
+         transform: rotate(60deg) 
+    }
+     75%{
+         top: -.4rem;
+         right: 0rem;
+         transform: rotate(30deg) 
+    }
+     to{
+         top: .2rem;
+         right: .3rem;
+         transform: rotate(0deg) 
+    }
 }
 
 
-.shopping-container{
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    justify-content: space-between;
-    align-content: center;
+@media (max-width: 768px) {
+
     
 }
-
-.shopping-container button {
-    width: 200px;
-    border-radius: .1rem;
-    background-color: #FF6B6B;
-    padding: 0 3rem;
-    transition: .2s opacity;
-    border-radius: 10px;
+ .cta-button {
+     display: inline-block;
+     padding: 10px 20px;
+     background-color: #007bff;
+     color: white;
+     text-decoration: none;
+     border-radius: 20px;
 }
-
-
-.shopping-container button:hover{
-    opacity: .9;    
-    cursor: pointer;
+ .cta-button:hover{
+     background-color: #e74c3c;
 }
-.shopping-container button:active{
-    transform: scale(1.3);
-}
-.shopping-container button#add-animation {
-    margin-left: 50px; 
-}
-.shopping-container button#add-animation1 {
-    margin-left: 100px; 
-}
-.shopping-container button#add-animation2 {
-    margin-left: 130px;
-    margin-right: 50px; 
-}
-.counter-container {
-    border: 1px solid #18040420;
-    border-radius: .1rem;
-    width: 3.3rem;
-    height: 3.3rem;
-    margin-right:  1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    position: relative;
-}
-.counter-container svg {
-    width: 3rem;
-    height: 50px;
-    color: rgb(198, 59, 63);
-}
-.counter-container span {
-    user-select: none;
-    position: absolute;
-    background: #3498db;
-    width: 1.3rem;
-    height: 1.3rem;
-    font-size:  .8rem;
-    border-radius: 50%;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: -.2rem;
-    right: .20rem;
-}
-.counter-container span:not(.animated-counter) {
-    display: none;
-}
-.counter-container span.animated-counter  {
-    animation: count .4s ease-in-out;
-}
-@keyframes count{
-    from{
-        top: .2rem;
-        right: -1.8rem;
-        transform: rotate(120deg)
-    }
-    25%{
-        top: -.2rem;
-        right: -1.2rem;
-        transform: rotate(80deg)
-    }
-    50%{
-        top: -.4rem;
-        right: -.6rem;
-        transform: rotate(60deg)
-    }
-    75%{
-        top: -.4rem;
-        right: 0rem;
-        transform: rotate(30deg)
-    }
-    to{
-        top:  .2rem;
-        right: .3rem;
-        transform: rotate(0deg)
-    }
-
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 20px;
-  }
-.cta-button:hover{
-        background-color: #e74c3c;
-
-}
-
-  
-  
-  
-  
+ 
