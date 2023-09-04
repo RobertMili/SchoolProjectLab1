@@ -32,3 +32,10 @@ fetch("data/rockAndRoll.json")
             songListContainer.appendChild(li);
         })
     })
+
+
+    const logo = document.getElementById('elvisLogo');
+
+    logo.addEventListener('click',function(){
+        window.location.href = "index.html";
+    });

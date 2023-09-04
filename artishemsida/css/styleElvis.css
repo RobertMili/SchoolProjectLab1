@@ -50,7 +50,7 @@ body {
 
 .cta-button {
   display: inline-block;
-  /* margin-right: 40px; */
+  margin-right: 40px;
   padding: 10px 20px;
   background-color: #007bff;
   color: white;
@@ -61,7 +61,7 @@ body {
       background-color: #e9280e;
 
 }
-@media (max-width: 765px) {
+@media (max-width: 500px) {
 
   .logo {
       margin-left: 10px;
