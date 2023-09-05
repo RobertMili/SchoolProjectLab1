@@ -1,6 +1,26 @@
 body {
-     background-color: #344c73;
-     font-family: "Roboto", sans-serif;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #FF6B6B, #cad2d8, #dad5df, #FFD700);
+    background-size: 400% 500%;
+    animation: gradientAnimation 15s ease infinite;
+    overflow-y: scroll;
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+   }
+    50% {
+        background-position: 100% 50%;
+   }
+    100% {
+        background-position: 0% 50%;
+   }
 }
  .registering-container {
      display: flex;
