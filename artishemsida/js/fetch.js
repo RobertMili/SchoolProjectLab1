@@ -6,4 +6,5 @@ fetch('data/data.json')
     .then((data) => {
         console.log(data);
     });
-    console.log("test");
+
+    
