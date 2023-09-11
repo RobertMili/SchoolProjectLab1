@@ -34,7 +34,7 @@ function confirmPassword(event) {
 // }
 
 
-function checkUserName(minLength) {
+function checkUserNameLength(minLength) {
   console.log("test");
  
 
