@@ -24,6 +24,10 @@ body {
     background-position: 0% 50%;
   }
 }
+
+.elvis-albums {
+  margin-right: 25px;
+}
 .content {
   text-align: center;
   color: #ffffff;
