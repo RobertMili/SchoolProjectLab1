@@ -398,10 +398,14 @@
     .grid-item {
         width: 325px;
         height: 438px;
+        margin-bottom: 20px;
 
     }
     .shopping-container button#add-animation1 {
-        margin-left: 20px;
+        margin-left: 20px;    
+    }
+    .shopping-container{
+        margin-left: 25px;
     }
  
     .counter-container{
