@@ -206,10 +206,16 @@
     /* Create flexible columns */
      justify-content: space-evenly;
      align-content: end;
-     height: 500px;
+     height: 300px;
 }
  .grid-container img {
      border-radius: 50%;
+}
+.grid-container img {
+    border-radius: 50%;
+    height: 400px;
+    margin-left: 50px;
+
 }
  .grid-item p {
      margin-left: 220px;
@@ -405,7 +411,7 @@
         margin-left: 20px;    
     }
     .shopping-container{
-        margin-left: 25px;
+        margin-left: 20px;
     }
  
     .counter-container{
