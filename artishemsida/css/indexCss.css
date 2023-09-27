@@ -7,7 +7,7 @@ body {
   font-family: Arial, sans-serif;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 290vh;
   background: linear-gradient(-45deg, #ff6b6b, #cad2d8, #dad5df, #ffd700);
   background-size: 400% 500%;
   animation: gradientAnimation 15s ease infinite;
