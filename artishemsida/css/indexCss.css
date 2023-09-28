@@ -443,6 +443,9 @@ button:hover {
   .social-media {
     margin-left:-150px
   }
+  .container {
+    margin-top: 150px;
+  }
 
   body {
     height: 100vh;
