@@ -2,6 +2,12 @@ body {
   background-color: #f1f3ef;
 }
 
+.float-label-field{
+  flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
 * {
   box-sizing: border-box;
   margin: 1;
@@ -192,7 +198,7 @@ ul {
 .order-record-container input[type="submit"][value="submit"] {
   width: 200px;
   border-radius: 15px;
-  margin-left: 30%;
+ 
 }
 .social-media {
   position:fixed;
