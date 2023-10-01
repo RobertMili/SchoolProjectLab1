@@ -155,28 +155,28 @@ body {
         flex-direction: column;
     }
 }
+}
 
-.header li,
-.header a,
-.header button {
-  font-family: "Montserrat", sans-serif;
+.header li, .header a, .header button {
+  font-family: "Montserrat",sans-serif;
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
 }
+
 #elvisLogo {
   max-width: 70px;
 }
 .logo {
   cursor: pointer;
   margin-right: auto;
-  margin-right: a;
 }
 .nav_links {
   list-style: none;
@@ -195,20 +195,24 @@ body {
 .nav_links li a:hover {
   color: aqua;
 }
-button {
-  margin-left: 20px;
-  padding: 9px 25px;
-  background-color: #3498db;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3 ease 0s;
+
+.cta-button {
+  display: inline-block;
+  margin-right: 40px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
 }
-button:hover {
-  background-color: #e74c3c;
+.cta-button:hover{
+      background-color: #e9280e;
+
 }
 @media (max-width: 500px) {
+
   .logo {
-    margin-left: 10px;
-  }
+      margin-left: 10px;
+ }
+ 
 }
