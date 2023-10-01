@@ -19,19 +19,6 @@ function confirmPassword(event) {
   }
 }
 
-// function inputLocalStorageRegistering(event){
-//   event.preventDefault();
-
-//   let firstName = elInputFirstName.value;
-//   let lastName = elInputLastName.value;
-//   let email = elEmail.value;
- 
-  
-//   localStorage.setItem('firstName',firstName);
-//   localStorage.setItem('lastName', lastName);
-//   localStorage.setItem('email',email);
-
-// }
 
 
 function checkUserNameLength(minLength) {
@@ -57,9 +44,14 @@ function inputLocalStorageLogin(){
 
 }
 
+const logo = document.getElementById('elvisLogo');
+
+logo.addEventListener('click',function(){
+  window.location.href = "index.html";
+});
+
 
 elFormRegistering.addEventListener('submit', confirmPassword, false);
-// elForm.addEventListener('submit', inputLocalStorageRegistering, false);
 elFormLogin.addEventListener('submit', inputLocalStorageLogin, false);
 
 elFormRegistering.addEventListener('submit', function(){
